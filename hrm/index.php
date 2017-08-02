@@ -6,7 +6,7 @@ $count=count($_POST);
     {       
         $email = $_POST['email'];
         $password =$_POST['password'];
-        // $password =MD5( $_POST['password']);
+        //$password =MD5( $_POST['password']);
         $query = "SELECT * FROM employee WHERE email = '$email' and password = '$password' and active ='1'";
         $result = mysqli_query($connect,$query);        
          $num=mysqli_num_rows($result);
